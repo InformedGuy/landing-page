@@ -11,6 +11,12 @@ body {
     font-size: 18px;
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header {
     background-color: #1F2937;
     padding: 25px 20px 15px 20px;
@@ -25,14 +31,15 @@ ul {
     list-style-type: none;
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 a {
     text-decoration: none;
 }
 
-img {
-    width: 450px;
+.hero-section img {
+    max-width: 450px;
 }
 
 h1 {
@@ -64,13 +71,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 25px;
 }
 
 .hero-section {
-    display: flex;
     gap: 40px;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 500px;
 }
 
 .hero-text > * {
@@ -101,10 +111,8 @@ section {
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .random-info > * {
@@ -113,9 +121,6 @@ section {
 
 .quote-section {
     min-height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #EFE7EB;
     color: #1F2937;
 }
@@ -137,31 +142,32 @@ section {
 }
 
 .sign-up .btn {
-    border: 2px solid #E5E7EB;
-    color: #E5E7EB;
+    border: 2px solid #F9FAF8;
+    color: #F9FAF8;
     font-weight: 600;
+    flex-shrink: 0;
 }
 
 .sign-up-container {
     color: #E5E7EB;
     background-color: #3882F6;
-    width: 75%;
+    width: 70%;
     padding: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .bold {
     font-weight: 700;
     margin-bottom: 3px;
+    color: #F9FAF8;
 }
 
 .sign-up {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 350px;
 }
 
@@ -169,7 +175,33 @@ footer {
     background-color: #1F2937;
     color: #E5E7EB;
     min-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 780px) {
+    li {
+        margin-left: auto;
+    }
+
+    .sign-up-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    header > * {
+        width: 90%;
+    }
+
+    .hero-section img {
+        width: 100%;
+    }
+
+    .sign-up-container {
+        width: 90%;
+    }
+
+    .sign-up {
+        min-height: 90%;
+    }
 }
