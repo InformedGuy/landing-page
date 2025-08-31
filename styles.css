@@ -76,3 +76,62 @@ nav {
 .hero-text > * {
     margin-bottom: 20px;
 }
+
+.random-image {
+    max-width: 250px;
+}
+
+.random-image img {
+    width: 100%;
+    height: 180px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.random-info {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.random-info > * {
+    margin-bottom: 40px;
+}
+
+.quote-section {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFE7EB;
+    color: #1F2937;
+}
+
+.quote-container {
+    width: 65%;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.speaker {
+    font-weight: 600;
+    text-align: right;
+    font-size: 24px;
+}
